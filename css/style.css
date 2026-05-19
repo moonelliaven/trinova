@@ -1,0 +1,859 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--soft-blue-white);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue-primary: #025FF4;
+    --soft-blue-white: #F5F6FA;
+    --white: #FFFFFF;
+    --dark-blue: #000610;
+    --black: #000000;
+    --soft-blue: #F2F6FE;
+    --grey: rgb(175, 175, 175);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--black);
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header .logo img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blue-primary);
+}
+
+.header button {
+    padding: 10px 40px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    background-color: var(--white);
+    color: var(--blue-primary);
+}
+
+
+/* ------------ALL SECTION DO-------------- */
+h5 {
+    font-size: 18px;
+    color: var(--blue-primary);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+/* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
+.banner {
+    display: grid;
+    background-image: url('../img/banner.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 60px;
+
+}
+
+.banner .sect-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 20px 60px;
+}
+
+.sect-one h1 {
+    font-size: 48px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.sect-one p {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 400;
+    max-width: 500px;
+    margin: 15px 0;
+}
+
+.button-section .btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.button-section {
+    display: flex;
+    gap: 20px;
+}
+.btn:hover {
+    gap: 20px;
+}
+
+/* ------------SERVICES--------------- */
+.services {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 100px;
+    width: 100%;
+    background-color: var(--soft-blue-white);
+}
+
+.services h1 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    text-align: center;
+    max-width: 800px;
+    font-weight: 500;
+}
+
+.services .card {
+    background-color: var(--white);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 8px;
+    width: 380px;
+    height: 220px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    transition: all 0.3s ease;
+}
+
+.card.active:hover {
+    transform: translateY(-5px);
+}
+
+.card .one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.card .two {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.two .cta {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.cta a {
+    text-decoration: none;
+    color: var(--blue-primary);
+    font-size: 16px;
+    padding: 20px 0px;
+    transition: color 0.3s ease;
+}
+.services .logo-sect img {
+    width: 50px;
+    height: 50px;
+    background-color: var(--soft-blue);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card .desc-sect {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.card h3 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+.card  p {
+    font-size: 14px;
+    color: var(--dark-blue);
+    font-weight: 400;
+    max-width: 300px;
+}
+
+.services .card-sect {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+/* -------------------about----------------- */
+.about {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    gap: 100px;
+    padding: 100px;
+    background-color: var(--dark-blue);
+}
+
+.sect-onee p {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 300;
+    max-width: 500px;
+}
+
+.sect-onee h3 {
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.about .sect-onee {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.sect-onee .menu-sect {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+}
+
+.sect-onee .menu-sect .sect {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.sect-onee .menu-sect  .sect img {
+    width: 50px;
+    height: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.about button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-self: center;
+    gap: 10px;
+    padding: 10px 40px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.about button.reveal.active:hover {
+    gap: 20px;
+}
+
+.sect-twoo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    transform: translateY(50px);
+}
+
+.sect-twoo .about-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 700px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.about .sect-twoo .menu-sect {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 30px;
+    background-color: var(--white);
+    border-radius: 17px;
+    transform: translateY(-80px);
+    padding: 20px 80px;
+}
+
+
+.sect-twoo .menu-sect .menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+
+/* -------------------process----------------- */
+.process {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+    padding: 40px;
+}
+
+.process h3 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    padding-bottom: 70px;
+}
+
+.process .sect-menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.process hr.reveal {
+    width: 250px;
+    transform: translateY(-90px);
+    border-top: 1px dashed var(--blue-primary);
+}
+
+.s-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 200px;
+    height: 300px;
+}
+
+.s-menu .logo img {
+    width: 100%;
+    padding: 10px;
+}
+
+.s-menu .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--blue-primary);
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+    border-radius: 110px;
+}
+
+.s-menu h4 {
+    font-size: 20px;
+    color: var(--dark-blue);
+    font-weight: 500;
+}
+
+/* -------------------products --------------- */
+.products {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 100px;
+    background-color: var(--dark-blue);
+}
+
+.products h3 {
+    font-size: 35px;
+    color: var(--white);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.product-menu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+.p-menu {
+    width: 370px;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.p-menu.active:hover {
+    transform: translateY(-5px);
+}
+.pm-img img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block  ;
+}
+
+.pm-desc {
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(35, 30, 46);
+    border-radius: 0 0 10px 10px;
+    gap: 3px;
+}
+
+.pm-desc h4 {
+    font-size: 16px;
+    color: var(--white);
+    font-weight: 600;
+}
+
+.pm-desc p {
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 300;
+}
+
+/* ----testimonials---- */
+.testi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 70vh;
+    background-color: var(--soft-blue-white);
+}
+
+/* ----testimonials---- */
+.testi {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 300px;
+}
+
+.testi h3 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    font-weight: 500;
+    padding-bottom: 50px;
+}   
+
+.testi .card-sectt {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center ;
+    gap: 20px;
+}
+
+.card-sectt .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    width: 400px;
+    padding: 40px;
+    background-color: var(--white);
+    border-radius: 10px;
+    border: 1px solid var(--grey);
+    transition: all 0.3s ease;
+}
+
+.card-sectt .card .box {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-start;
+    margin-top: auto;
+}
+
+.card-sectt .card:hover {
+    transform: translateY(-4px);
+}
+
+.card-sectt .card p {
+    font-size: 15px;
+    color: var(--dark-blue);
+    font-weight: 400;
+}
+
+.card-sectt i {
+    padding: 20px;
+    margin: 50px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1000px;
+    border: 1px solid var(--black);
+}
+
+#prev, #next {
+    width: 50px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+    background: var(--blue-primary);
+    color: white;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+/* ---------------------faq section---------------- */
+.faq {
+    display: flex;
+    background: url(../img/banner-4.png) ;
+    color: white;
+    padding: 70px;
+    gap: 50px;
+}
+
+.faq h3 {
+    font-size: 30px;
+    color: var(--white);
+    font-weight: 500;
+    padding-bottom: 20px;
+}
+
+.faq .onee {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.faq .boxxes {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.boxxes .box {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    border-radius: 10px;
+    width: 700px;
+    padding: 20px 40px;
+    border: 1px solid var(--blue-primary);
+}
+
+
+.b-desc p {
+    font-size: 13px;
+    font-weight: 200;
+    margin-top: 10px;
+
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transition: all 0.4s ease;
+}
+
+.box.show .b-desc p {
+    max-height: 50px;
+    opacity: 1;
+}
+
+.b-desc h4 {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* end */
+.end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 20vh;
+    width: 100%;
+    background-color: var(--dark-blue);
+    padding: 30px;
+}
+
+.end .container {
+    display: flex;
+    color: var(--white);
+    background-color: var(--blue-primary);
+    padding: 20px;
+    border-radius: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.content h3 {
+    font-size: 20px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.content p {
+    font-size: 12px;
+    color: var(--white);
+    font-weight: 200;
+}
+
+.container button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 10px 40px;
+    background-color: white;
+    color: var(--blue-primary);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.container button:hover {
+    gap: 20px;
+}
+
+.container button a {
+    text-decoration: none;
+    color: var(--blue-primary);
+    font-weight: 500;
+}
+
+/* -----------------footer-------------------- */
+.footer {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 330px;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--dark-blue);
+}
+
+.footer hr {
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.frame-one {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+
+.logomeds {
+    display: flex;
+    gap: 20px;
+}
+
+.frame-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.frame-list .list h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6ba4ff;
+}
+
+.list .list-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.list-menu a:hover {
+    color: var(--blue-primary);
+
+}
+
+.frame-list {
+    display: flex;
+    gap: 50px;
+}
+
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.twot {
+    display: flex;
+    gap: 10px;
+}
+
+.card-sectt {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.slider-container {
+    width: 1140px; 
+    overflow: hidden;
+}
+
+.slider {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease;
+}
+
+.card {
+    min-width: 360px;
+}
+
+/* reveal */
+.reveal {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effect untuk navbar - garis muncul */
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}

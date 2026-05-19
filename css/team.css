@@ -1,0 +1,548 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--soft-blue-white);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue-primary: #025FF4;
+    --soft-blue-white: #F5F6FA;
+    --white: #FFFFFF;
+    --dark-blue: #000610;
+    --black: #000000;
+    --soft-blue: #F2F6FE;
+    --grey: rgb(175, 175, 175);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--black);
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header .logo img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blue-primary);
+}
+
+.header button {
+    padding: 10px 40px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    background-color: var(--white);
+    color: var(--blue-primary);
+}
+
+
+/* ------------ALL SECTION DO-------------- */
+h5 {
+    font-size: 18px;
+    color: var(--blue-primary);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.card-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+/* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
+.banner {
+    display: grid;
+    background-color: var(--dark-blue);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 60px;
+
+}
+
+.banner .sect-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 20px 60px;
+}
+
+.sect-one h1 {
+    font-size: 48px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.sect-one p {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 400;
+    max-width: 500px;
+    margin: 15px 0;
+}
+
+.button-section .btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+
+.button-section {
+    display: flex;
+    gap: 20px;
+}
+.btn:hover {
+    gap: 20px;
+}
+.banner img {
+    transition: all 0.3s ease;
+}
+.banner img:hover {
+    transform: scale(1.05);
+}
+
+/* -----------------footer-------------------- */
+.footer {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 330px;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--dark-blue);
+}
+
+.footer hr {
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.frame-one {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+
+.logomeds {
+    display: flex;
+    gap: 20px;
+}
+
+.frame-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.frame-list .list h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6ba4ff;
+}
+
+.list .list-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.list-menu a:hover {
+    color: var(--blue-primary);
+
+}
+
+.frame-list {
+    display: flex;
+    gap: 50px;
+}
+
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.twot {
+    display: flex;
+    gap: 10px;
+}
+
+/* ---------------------leadership team----------------------- */
+.leadership {
+    padding: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.leadership .card-section {
+    display: flex;
+    gap: 10px;
+    margin: 20px;
+}
+
+.card {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 330px;
+    min-height: 500px;
+    background-color: white;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.card.active:hover {
+    transform: scale(1.01);
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.card-desc {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 9px;
+    width: 100%;
+    height: 100%;
+
+}
+
+.card-desc h2 {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.card-desc h4 {
+    font-size: 13px;
+    font-weight: 500;
+    color: var(--blue-primary);
+}
+
+.medsos {
+    display: flex;
+    gap: 20px;
+    color: var(--blue-primary);
+    display: flex;
+    margin-top: auto;
+}
+
+.team {
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 30px;
+    border: 1px solid var(--grey);
+    border-radius: 30px;
+    margin: 10px 5px;
+    transition: all 0.3s ease;
+}
+
+.card-2:hover, .active-2 {
+    background-color: var(--blue-primary);
+    border: 1px solid var(--blue-primary);
+    color: white;
+    cursor: pointer;
+}
+
+.team .btn-2 button.active:hover {
+    gap: 20px;
+}
+
+.card-3 {
+    width: 250px;
+    background-color: var(--white);
+    border-radius: 20px;
+    overflow: hidden;
+    margin: 10px;
+    transition: all 0.3s ease;
+}
+
+.card-3.active:hover {
+    transform:  translateY(-2px);
+}
+
+.card-3 img {
+    width: 100%;
+    height: 150px;
+    display: block;
+    object-fit: cover;
+}
+
+.team button {
+    padding: 10px 20px;
+    margin: 20px;
+    border: none;
+    color: white;
+    background-color: var(--blue-primary);
+    border-radius: 20px;
+}
+
+.values {
+    width: 100%;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    background-color: var(--dark-blue);
+}
+
+.card-4 {
+    width: 300px;
+}
+
+.card-4 i {
+    padding: 20px;
+    color: var(--blue-primary);
+}
+
+.card-4 .logo-list {
+    display: flex;
+    align-items: center;
+}
+
+.card-4.active:hover {
+    transform: translateY(-5px);
+}
+
+.values hr {
+    width: 1px;
+    height: 150px;
+    background-color: gray;
+    border: none;
+}
+
+.values .card-section {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+    margin: 30px;
+}
+
+.container {
+    padding: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.card-5 {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    background-color: white;
+    padding: 30px 60px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+.card-5:hover{
+    transform: scale(1.02);
+}
+.card-5 i {
+    font-size: 35px;
+    color: var(--blue-primary);
+    padding: 20px;
+}
+
+.card-5-desc h4 {
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.container .card-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.cta {
+    width: 100%;
+    background-color: var(--blue-primary);
+    margin: 40px 0;
+    border: 1px solid white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.cta-desc {
+    color: white;
+}
+
+.cta button {
+    padding: 20px 30px;
+    border: none;
+    background-color: white;
+    border-radius: 30px;
+    color: var(--blue-primary);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    transition: all 0.3s ease;
+}
+
+.cta button:hover {
+    gap: 20px;
+}
+
+/* reveal */
+.reveal {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effect untuk navbar - garis muncul */
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
