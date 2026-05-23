@@ -56,7 +56,11 @@ $services_query = mysqli_query($conn, "SELECT * FROM tb_services ORDER BY id ASC
             <li><a href="team.html">Our Team</a></li>
             <li><a href="contact.php"  style="color: var(--blue-primary);">Contact</a></li>
         </ul>
+<<<<<<< HEAD
         <button onclick="window.location.href='login.php'">Get Started</button>
+=======
+        <button>Get Started</button>
+>>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
     </div>
 
     <!-- Banner -->

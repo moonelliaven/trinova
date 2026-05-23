@@ -5,8 +5,13 @@
 
 <p class="menu-header">MENU UTAMA</p>
 <ul>
+<<<<<<< HEAD
     <li><a href="projects.php"><i class="fas fa-project-diagram"></i> Projects</a></li>
     <li><a href="contact.php"><i class="fas fa-phone"></i> Contact</a></li>
+=======
+    <li><a href="kategori_data.php"><i class="fas fa-layer-group"></i> Categories</a></li>
+    <li><a href="produk_data.php"><i class="fas fa-project-diagram"></i> Projects</a></li>
+>>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
 </ul>
 
 <p class="menu-header">MENU LAINNYA</p>

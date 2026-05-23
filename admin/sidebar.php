@@ -7,7 +7,11 @@
 <ul>
     <li><a href="kategori_data.php"><i class="fas fa-layer-group"></i> Categories</a></li>
     <li><a href="produk_data.php"><i class="fas fa-project-diagram"></i> Projects</a></li>
+<<<<<<< HEAD
     <li><a href="users_data.php"><i class="fa-solid fa-user-gear"></i> Users</a></li>
+=======
+    <li><a href="users_data.php"><i class="fa-solid fa-user-gear"></i> Users Account</a></li>
+>>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
     <li><a href="pesan_data.php"><i class="fa-solid fa-message"></i> Messages</a></li>
     <li><a href="services_data.php"><i class="fa-solid fa-gear"></i> Services</a></li>
 </ul>
