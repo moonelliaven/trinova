@@ -1,0 +1,537 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: var(--soft-blue-white);
+    scroll-behavior: smooth;
+}
+
+:root {
+    --blue-primary: #025FF4;
+    --soft-blue-white: #F5F6FA;
+    --white: #FFFFFF;
+    --dark-blue: #000610;
+    --black: #000000;
+    --soft-blue: #F2F6FE;
+    --grey: rgb(175, 175, 175);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: var(--black);
+    padding: 20px 30px;
+    position: fixed;
+    z-index: 999;
+}
+
+.header .logo img {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.header .navbar {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.navbar {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    color: white;
+}
+
+.navbar a{
+    text-decoration: none;
+    color: var(--white);
+    font-size: 16px;
+    transition: color 0.3s ease;
+}
+
+.navbar a:hover {
+    color: var(--blue-primary);
+}
+
+.header button {
+    padding: 10px 40px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.header button:hover {
+    background-color: var(--white);
+    color: var(--blue-primary);
+}
+
+
+/* ------------ALL SECTION DO-------------- */
+h5 {
+    font-size: 18px;
+    color: var(--blue-primary);
+    font-weight: 400;
+    text-transform: uppercase;
+}
+h3 {
+    font-size: 30px;
+    color: var(--dark-blue);
+    font-weight: 600;
+}
+h1 {
+    font-size: 30px;
+    font-weight: 500;
+}
+.card-section {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100% ;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
+.banner {
+    display: grid;
+    background-image: url('../img/banner-6.png');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    width: 100%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    padding: 60px;
+
+}
+
+.banner .sect-one {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 0px;
+    padding: 20px 60px;
+}
+
+.sect-one h1 {
+    font-size: 48px;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.sect-one p {
+    font-size: 18px;
+    color: var(--white);
+    font-weight: 400;
+    max-width: 500px;
+    margin: 15px 0;
+}
+
+.button-section .btn {
+    padding: 10px 40px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: var(--white);
+}
+.btn.active:hover {
+    gap: 20px;
+}
+
+.button-section {
+    display: flex;
+    gap: 20px;
+}
+
+/* -----------------footer-------------------- */
+.footer {
+    display: flex ;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 330px;
+    width: 100%;
+    gap: 20px;
+    background-color: var(--dark-blue);
+}
+
+.footer hr {
+    width: 100%;
+}
+
+.footer p {
+    font-size: 14px;
+    font-weight: 200;
+}
+
+.content-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    gap: 20px;
+    padding: 20px;
+}
+
+.frame-one {
+    display: flex;
+    flex-direction: column;
+    width: 20%;
+    gap: 10px;
+}
+
+.logomeds {
+    display: flex;
+    gap: 20px;
+}
+
+.frame-list .list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+}
+
+.frame-list .list h4 {
+    font-size: 18px;
+    font-weight: 500;
+    color: #6ba4ff;
+}
+
+.list .list-menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.list-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 13px;
+    font-weight: 300;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+.list-menu a:hover {
+    color: var(--blue-primary);
+
+}
+
+.frame-list {
+    display: flex;
+    gap: 50px;
+}
+
+.new {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 10px;
+    width: 100%;
+    padding: 0 50px;
+}
+
+.twot {
+    display: flex;
+    gap: 10px;
+}
+
+/* go contact us */
+.contact {
+    padding: 100px 100px 20px 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+} 
+.card {
+    width: 300px;
+    height: 300px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: start;
+    gap: 10px;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+.card.active:hover {
+    transform: translateY(-4px);
+}
+.card i {
+    color: var(--blue-primary);
+    background-color: var(--soft-blue);
+    padding: 20px;
+    font-size: 30px;
+    border-radius: 100%;
+}
+.card span {
+    color: var(--blue-primary);
+    font-weight: 600;
+    margin-top: auto;
+}
+
+.form, .location {
+    width: 620px;
+    background-color: white;
+    padding: 50px;
+    border-radius: 20px;
+    display: flex; 
+    flex-direction: column;
+    min-height: 750px;
+    margin: 0 0 60px 0 ;
+    gap: 10px;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 20px;
+}
+.input-section {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+input, select {
+    width: 100%;
+    padding: 10px 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    background-color: #f0f0f0;
+}
+
+input:active {
+    border: 1px solid var(--blue-primary);
+}
+
+.form .card-section {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: end;
+    margin-top: 20px;
+}
+
+form button {
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: var(--blue-primary);
+    border: none;
+    border-radius: 30px;
+    color: white;
+    transition: all 0.3s ease;
+}
+form button:hover {
+    gap: 20px;
+    cursor: pointer
+}
+.location img {
+    width: 100%;
+}
+.hq img {
+    width: 230px;
+    transition: transform 0.4s ease;
+}
+.hq:hover img {
+    transform: scale(1.1);
+}
+.hq {
+    width: 100%;
+    background-color: var(--soft-blue-white);
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hq .desc {
+    display: flex;
+    padding: 30px;
+    flex-direction: column;
+}
+.hq .desc h4 {
+    font-size: 15px;
+
+}
+.hq .desc p {
+    font-size: 12px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    padding: 15px 20px;
+    border: 1px solid var(--grey);
+    border-radius: 10px;
+    background-color: #f0f0f0;
+    resize: none;
+}
+
+.cta {
+    width: 1260px;
+    margin-bottom: 30px;
+    background-color: var(--blue-primary);
+    padding: 20px;
+    border-radius: 20px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cta button {
+    padding: 10px 30px;
+    background-color: white;
+    border: none;
+    border-radius: 30px;
+    color: var(--blue-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+.cta button:hover {
+    gap: 20px;
+}
+
+.img-box {
+    width: 100%;
+    overflow: hidden;
+}
+.img-box img {
+    transition: all 0.3s ease;
+}
+.img-box img:hover {
+    transform: scale(1.05);
+    cursor: pointer;
+}
+.cont {
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+.card-section-2 {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: flex-start;
+    width: auto;
+}
+
+.card-4 {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    width: 400px;
+}
+
+.card-4 i {
+    background-color: #001b48;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    border-radius: 100%;
+    font-size: 20px;
+    color: var(--blue-primary)
+}
+
+.card-4-desc {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-4-desc .desc-p{
+    display: flex;
+    margin-top: -10px ;
+}
+
+/* reveal */
+.reveal {
+    transform: translateY(10px);
+    opacity: 0;
+    transition: all 0.7s ease;
+}
+
+.reveal.active {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+/* Hover effect untuk navbar - garis muncul */
+.navbar li a {
+    position: relative;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.navbar li a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    height: 2px;
+    background-color: var(--blue-primary);
+    transition: width 0.3s ease;
+}
+
+.navbar li a:hover::after {
+    width: 100%;
+}
+
+.alert-success {
+    background-color: rgb(190, 255, 190);
+}
+.alert-error {
+    background-color: rgb(255, 190, 190);
+}
+.alert-success, .alert-error {
+    border-radius: 10px;
+    padding: 10px;
+}   
