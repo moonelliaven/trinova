@@ -1,10 +1,10 @@
 <?php
 
-$hostname = getenv('mysql.railway.internal');
-$username = getenv('root');
-$password = getenv('cQDuLQbdZxuuifRYNuAAhPISXRhtKIlk');
-$dbname   = getenv('railway');
-$port     = getenv('3306');
+$hostname = 'mysql.railway.internal';
+$username = 'root';
+$password = 'cQDuLQbdZxuuifRYNuAAhPISXRhtKIlk';
+$dbname   = 'railway';
+$port     = '3306';
 
 $conn = mysqli_connect(
     $hostname,
