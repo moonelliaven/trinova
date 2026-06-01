@@ -22,16 +22,26 @@
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html" style="color: var(--blue-primary);">Services</a></li>
-            <li><a href="product.html">Project</a></li>
+            <li><a href="product.php">Project</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
-<<<<<<< HEAD
-        <button onclick="window.location.href='login.php'">Get Started</button>
-=======
-        <button>Get Started</button>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
+        <div class="btn-sect">
+            <button class="menu-btn">☰</button>
+            <button onclick="window.location.href='login.php'"> <span> Get Started</span> <i class="fa-solid fa-user"></i></button>
+        </div>
     </div>
+    <div class="navbar-active">
+        <ul class="navbar-2">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html" style="color: var(--blue-primary);">Services</a></li>
+            <li><a href="product.php">Project</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.php">Contact</a></li>
+        </ul>
+    </div>
+
 
     <!-- Banner -->
     <div class="banner">
@@ -144,6 +154,7 @@
                     </ul>
                 </div>
             </div>
+            <p class="none reveal" style="display: none;">No Product Displayed</p>
         </div>
     </div>
 
@@ -247,11 +258,11 @@
                 <div class="list">
                     <h4>Our Services</h4>
                     <div class="list-menu">
-                        <a href="product.html">Mobile App Development</a>
-                        <a href="product.html">Software Development</a>
-                        <a href="product.html">Cloud Solution</a>
-                        <a href="product.html">Products</a>
-                        <a href="product.html">IT Security</a>
+                        <a href="product.php">Mobile App Development</a>
+                        <a href="product.php">Software Development</a>
+                        <a href="product.php">Cloud Solution</a>
+                        <a href="product.php">Products</a>
+                        <a href="product.php">IT Security</a>
                     </div>
                 </div>
                 <div class="list">
@@ -286,5 +297,6 @@
         </div>
     </div>
     <script src="js/loading.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

@@ -5,11 +5,8 @@ include '../db.php';
 $query = mysqli_query($conn, "SELECT * FROM tb_admin WHERE admin_id = '".$_SESSION['id_login']."'");
 $d = mysqli_fetch_object($query);
 
-<<<<<<< HEAD
 $last_produk = mysqli_query($conn, "SELECT * FROM tb_product ORDER BY product_id DESC LIMIT 4");
-=======
-$last_produk = mysqli_query($conn, "SELECT * FROM tb_product ORDER BY product_id");
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
+
 $last_category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY category_id");
 
 ?>
@@ -57,11 +54,7 @@ $last_category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY categor
                     <div class="desc-two">
                     <h3>Selamat datang, <span> <?php echo $d->nama ?> </span>!</h3>
                     <p>kelola data dengan aman dan efisien dari TriNova Tech</p>
-<<<<<<< HEAD
                     <button onclick="window.location='../index.html'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
-=======
-                    <button onclick="window.location='../index.php'">Lihat Website <i class="fa-solid fa-angle-right"></i> </button>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     </div>
                 </div>
                 <div class="dashboard-cards">
@@ -93,12 +86,7 @@ $last_category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY categor
                             <a href="produk_data.php">See Details <i class="fa-solid fa-arrow-right"></i></a>
                         </div>
                     </div>
-<<<<<<< HEAD
                     <!-- total users Account -->
-=======
-                   
-                    <!-- total Customers Account -->
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <div class="card" onclick="window.location='users_data.php'">
                     <i class="fa-solid fa-users logo"></i>
                     <div class="desc">
@@ -112,7 +100,6 @@ $last_category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY categor
                         <a href="users_data.php">See Details <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-<<<<<<< HEAD
                     <!-- total services -->
                 <div class="card" onclick="window.location='services_data.php'">
                     <i class="fa-solid fa-users logo"></i>
@@ -141,8 +128,6 @@ $last_category = mysqli_query($conn, "SELECT * FROM tb_category ORDER BY categor
                         <a href="pesan_data.php">See Details <i class="fa-solid fa-arrow-right"></i></a>
                     </div>
                 </div>
-=======
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
 
                 <div class="sect-two">
                     <div class="quick-access">

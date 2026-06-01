@@ -83,7 +83,7 @@ $d = mysqli_fetch_object($query);
                         <td><?php echo $row['telpon'] ?></td>
                         <td><?php echo $row['level'] ?></td>
                         <td>
-                            <a href="users_edit.php?id=<?php echo $row['admin_id'] ?>">Edit</a> ||
+                            <a href="users_edit.php?id=<?php echo $row['admin_id'] ?>">Edit</a> |
                             <a href="hapus_proses.php?idl=<?php echo $row['admin_id'] ?>" onclick="return confirm('Yakin ingin hapus user ini?')">Hapus</a>
                         </td>
                     </tr>

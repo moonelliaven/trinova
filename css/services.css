@@ -105,10 +105,12 @@ h3 {
 /* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
 .banner {
     display: grid;
-    background-image: url('../img/banner-3.png');
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../img/banner4.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    height: 60vh;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
@@ -428,4 +430,131 @@ h3 {
 
 .navbar li a:hover::after {
     width: 100%;
+}
+
+.navbar-active {
+    background-color: var(--black);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 998;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.navbar-2 {
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navbar-2 a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-active.active{
+    display: block;
+}
+.menu-btn {
+    display: none;
+}
+
+.btn-sect i {
+    display: none;
+}
+@media (max-width: 768px) {
+        .menu-btn {
+        display: block;
+    }
+
+    .btn-sect i {
+        display: block;
+    }
+    .header {
+        padding: 20px;
+        width: 100%;
+    }
+
+    .header .logo img {
+        width: 120px;
+    }
+
+    .header .navbar {
+        display: none;
+    }
+
+    .menu-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: var(--white);
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    .btn-sect {
+        display: flex;
+        gap: 10px;
+    }
+
+    .btn-sect span {
+        display: none;
+    }
+
+    /* banner */
+    .banner {
+        grid-template-columns: 1fr;
+        padding: 100px 20px;
+        height: auto;
+    }
+    .services {
+        padding: 100px;
+        text-align: center;
+    }
+    .card {
+        text-align:start;
+        width: 100%;
+    }
+
+    .appr {
+        padding: 60px;
+    }
+
+    
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frame-one {
+        width: 100%;
+    }
+
+    .frame-list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .twot {
+        flex-direction: column;
+    }
 }

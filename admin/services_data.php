@@ -65,7 +65,7 @@ $d = mysqli_fetch_object($query);
                         <td><?php echo $no++ ?></td>
                         <td><?php echo $row['services'] ?></td>
                         <td>
-                            <a href="services_edit.php?id=<?php echo $row['id'] ?>">Edit</a> ||
+                            <a href="services_edit.php?id=<?php echo $row['id'] ?>">Edit</a> |
                             <a href="hapus_proses.php?idk=<?php echo $row['id'] ?>" onclick="return confirm('Yakin ingin hapus ?')">Hapus</a>
                         </td>
                     </tr>

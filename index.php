@@ -19,34 +19,72 @@
             <img src="img/logo-text-white.png" alt="Logo" style="width: 160px;">
         </div>
         <ul class="navbar">
-<<<<<<< HEAD
             <li><a href="index.html" style="color: var(--blue-primary);">Home</a></li>
-=======
-            <li><a href="index.html"   style="color: var(--blue-primary);">Home</a></li>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="product.html">Project</a></li>
+            <li><a href="product.php">Project</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="contact.php">Contact</a></li>
         </ul>
-        <button onclick="window.location.href='login.php'">Get Started</button>
+        <div class="btn-sect">
+            <button class="menu-btn">☰</button>
+            <button onclick="window.location.href='login.php'"> <span> Get Started</span> <i class="fa-solid fa-user"></i></button>
+        </div>
+    </div>
+    <div class="navbar-active">
+            <ul class="navbar-2">
+                <li><a href="index.html" style="color: var(--blue-primary);">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="product.php">Project</a></li>
+                <li><a href="team.html">Our Team</a></li>
+                <li><a href="contact.php">Contact</a></li>
+            </ul>
     </div>
 
     <!-- Banner -->
-    <div class="banner">
+<div class="banner">
+
+    <!-- Slide 1 -->
+    <div class="slide active" style="background-image: url('img/banner4.jpg');">
         <div class="sect-one">
-            <h5 class="reveal">innovating your digital future</h5>
-            <h1 class="reveal">Smart Solutions,</h1>
-            <h1 class="reveal">For a Better Tomorrow</h1>
-            <p class="reveal">We are ready to help you turn your ideas into innovative digital solutions that create impact for your business.</p>
-            <div class="button-section reveal">
-                <div class="btn" style="background-color: var(--blue-primary);"><a href="services.html"></a>Our Services <i class="fa-solid fa-arrow-right"></i></div>
-                <div class="btn" style="border: 1px solid white;" onclick="document.querySelector('.services').scrollIntoView({behavior: 'smooth'})"><a href=""></a>Learn More<i class="fa-solid fa-arrow-right"></i></div>
-            </div>
+            <h5>Innovating Your Digital Future</h5>
+            <h1>Smart Solutions,</h1>
+            <h1>For a Better Tomorrow</h1>
+            <p>We are ready to help you turn your ideas into innovative digital solutions.</p>
+
         </div>
-        <div class="sect-one"></div>
     </div>
+
+    <!-- Slide 2 -->
+    <div class="slide" style="background-image: url('img/banner5.jpg');">
+        <div class="sect-one">
+            <h5>Creative Technology</h5>
+            <h1>Build Faster</h1>
+            <h1>Grow Smarter</h1>
+            <p>Helping businesses accelerate digital transformation.</p>
+        </div>
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slide" style="background-image: url('img/banner3.jpg');">
+        <div class="sect-one">
+            <h5>Future Ready</h5>
+            <h1>Cloud & Security</h1>
+            <h1>Solutions</h1>
+            <p>Secure, scalable and reliable infrastructure.</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <button class="banner-btn prev">
+        <i class="fa-solid fa-chevron-left"></i>
+    </button>
+    <button class="banner-btn next">
+        <i class="fa-solid fa-chevron-right"></i>
+    </button>
+
+</div>
 
     <!-- what we do -->
     <div class="services">
@@ -56,11 +94,7 @@
             <!-- card 1 -->
             <div class="card reveal">
                 <div class="logo-sect">
-<<<<<<< HEAD
                     <img src="img/logo/code.png" alt="">
-=======
-                    <img src="../img/logo/code.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="desc-sect">
                     <div class="one">
@@ -68,22 +102,14 @@
                     <p>Building innovative software solutions tailored to your needs.</p>
                     </div>
                     <div class="two">
-<<<<<<< HEAD
                         <div class="cta"><a href="services.html">Learn More</a><img src="img/logo/arrow-right-blue.png" alt=""></div>
-=======
-                        <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     </div>
                 </div>
             </div>
             <!-- card 2 -->
             <div class="card reveal">
                 <div class="logo-sect">
-<<<<<<< HEAD
                     <img src="img/logo/layout.png" alt="">
-=======
-                    <img src="../img/logo/layout.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="desc-sect">
                     <div class="one">
@@ -91,22 +117,14 @@
                     <p>Developing user-friendly, high-performance mobile applications.</p>
                     </div>
                     <div class="two">
-<<<<<<< HEAD
                         <div class="cta"><a href="services.html">Learn More</a><img src="img/logo/arrow-right-blue.png" alt=""></div>
-=======
-                        <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     </div>
                 </div>
             </div>
             <!-- card 3 -->
             <div class="card reveal">
                 <div class="logo-sect">
-<<<<<<< HEAD
                     <img src="img/logo/cloud.png" alt="">
-=======
-                    <img src="../img/logo/cloud.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="desc-sect">
                     <div class="one">
@@ -114,22 +132,14 @@
                     <p>Providing secure, scalable, and efficient cloud services for your business.</p>
                     </div>
                     <div class="two">
-<<<<<<< HEAD
                         <div class="cta"><a href="services.html">Learn More</a><img src="img/logo/arrow-right-blue.png" alt=""></div>
-=======
-                        <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     </div>
                 </div>
             </div>
             <!-- card 4 -->
             <div class="card reveal">
                 <div class="logo-sect">
-<<<<<<< HEAD
                     <img src="img/logo/checklist-circle.png" alt="">
-=======
-                    <img src="../img/logo/checklist-circle.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="desc-sect">
                     <div class="one">
@@ -137,11 +147,7 @@
                     <p>Providing comprehensive IT security services to protect your digital assets.</p>
                     </div>
                     <div class="two">
-<<<<<<< HEAD
                         <div class="cta"><a href="services.html">Learn More</a><img src="img/logo/arrow-right-blue.png" alt=""></div>
-=======
-                        <div class="cta"><a href="">Learn More</a><img src="../img/logo/arrow-right-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     </div>
                 </div>
             </div>
@@ -156,7 +162,6 @@
             <h3 class="reveal">Driving Innovation, <br> Delivering Results</h3>
             <p class="reveal">TriNova Tech is a technology company focused on providing the best digital solutions with the latest technology and an experienced professional team.</p>
             <div class="menu-sect">
-<<<<<<< HEAD
                 <div class="sect reveal"><img src="img/logo/checklist-circle.png" alt=""><p>Innovative and Trusted Solutions</p></div>
                 <div class="sect reveal"><img src="img/logo/checklist-circle.png" alt=""><p>Professional and Experienced Team</p></div>
                 <div class="sect reveal"><img src="img/logo/checklist-circle.png" alt=""><p>Fast and Responsive Service</p></div>
@@ -165,25 +170,11 @@
         </div>
         <div class="sect-twoo reveal">
             <img class="about-img" src="img/placehorder/img-2.png" alt="">
-=======
-                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Innovative and Trusted Solutions</p></div>
-                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Professional and Experienced Team</p></div>
-                <div class="sect reveal"><img src="../img/logo/checklist-circle.png" alt=""><p>Fast and Responsive Service</p></div>
-            </div>
-            <button class="reveal">Learn More <img src="img/logo/arrow-right.png" alt=""></button>
-        </div>
-        <div class="sect-twoo reveal">
-            <img class="about-img" src="../img/placehorder/img-2.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
 
             <div class="menu-sect">
                 <!-- one -->
                 <div class="menu" style="color: black;">
-<<<<<<< HEAD
                     <div class="logo"><img src="img/logo/checklist-square-blue.png" alt=""></div>
-=======
-                    <div class="logo"><img src="../img/logo/checklist-square-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     <div class="desc">
                         <h3>150+</h3>
                         <p>Projects Completed</p>
@@ -191,11 +182,7 @@
                 </div>
                 <!-- one -->
                 <div class="menu" style="color: black;">
-<<<<<<< HEAD
                     <div class="logo"><img src="img/logo/smile-blue.png" alt=""></div>
-=======
-                    <div class="logo"><img src="../img/logo/smile-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     <div class="desc">
                         <h3>98%</h3>
                         <p>Client Satisfaction</p>
@@ -203,11 +190,7 @@
                 </div>
                 <!-- one -->
                 <div class="menu" style="color: black;">
-<<<<<<< HEAD
                     <div class="logo"><img src="img/logo/users-blue.png" alt=""></div>
-=======
-                    <div class="logo"><img src="../img/logo/users-blue.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                     <div class="desc">
                         <h3>50+</h3>
                         <p>Happy Clients</p>
@@ -224,41 +207,25 @@
         <h3 class="reveal">Our Simple & Effective Process</h3>
         <div class="sect-menu">
             <div class="s-menu reveal">
-<<<<<<< HEAD
                 <div class="logo"><img src="img/logo/search.png" alt=""></div>
-=======
-                <div class="logo"><img src="../img/logo/search.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <h4>01. Discover</h4>
                 <p>We deeply understand your business needs.</p>
             </div>
             <hr class="reveal">
             <div class="s-menu reveal">
-<<<<<<< HEAD
                 <div class="logo"><img src="img/logo/edit.png" alt=""></div>
-=======
-                <div class="logo"><img src="../img/logo/edit.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <h4>02. Plan</h4>
                 <p>Developing the right strategy and solution for you.</p>
             </div>
             <hr class="reveal">
             <div class="s-menu reveal">
-<<<<<<< HEAD
                 <div class="logo"><img src="img/logo/code-white.png" alt=""></div>
-=======
-                <div class="logo"><img src="../img/logo/code-white.png" alt=""></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <h4>03. Develop</h4>
                 <p>Development process using the best technology.</p>
             </div>
             <hr class="reveal">
             <div class="s-menu reveal">
-<<<<<<< HEAD
                 <div class="logo"><img src="img/logo/send.png" alt=""></div>
-=======
-                <div class="logo"><img src="../img/logo/send.png" alt="" ></div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <h4>04. Deliver</h4>
                 <p>Delivering quality solutions on time.</p>
             </div>
@@ -310,9 +277,9 @@
                     <p>Web Application</p>
                 </div>
             </div>
-        </div>  
+        </div> 
+        <button class="btn-product reveal" onclick="window.location.href='product.php'">View All Projects <img src="img/logo/arrow-right.png" alt=""></button>
     </div>
-<<<<<<< HEAD
     
     <div class="testi">
         <h5 class="reveal">TESTIMONIALS</h5>
@@ -414,108 +381,6 @@
             <i id="next" class="fa-solid fa-chevron-right reveal"></i>
         </div>
     </div>
-=======
-    <div class="testi">
-    <h5 class="reveal">TESTIMONIALS</h5>
-    <h3 class="reveal">What Our Clients Say</h3>
-
-    <div class="card-sectt">
-        <i id="prev" class="fa-solid fa-chevron-left reveal"></i>
-
-        <div class="slider-container">
-            <div class="slider reveal" id="slider">
-
-                <!-- card 1 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"TriNova Tech helped us develop a system that greatly streamlined our business operations."</p>
-
-                    <div class="box">
-                        <img src="../img/person/one.png" alt="">
-                        <div class="desc">
-                            <h4>Budi Santoso</h4>
-                            <p>CEO, Fantech Indonesia</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card 2 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"The mobile app developed by TriNova Tech has outstanding performance and is loved by our users."</p>
-
-                    <div class="box">
-                        <img src="../img/person/two.png" alt="">
-                        <div class="desc">
-                            <h4>Siti Rahmawati</h4>
-                            <p>Product Manager, SchopEase</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card 3 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Our company's data security is now much more reliable thanks to TriNova Tech's IT Security solutions."</p>
-
-                    <div class="box">
-                        <img src="../img/person/three.png" alt="">
-                        <div class="desc">
-                            <h4>Andi Wijaya</h4>
-                            <p>IT Director, SecureCorp</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card 4 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Fast, professional service, and the final results are very satisfying."</p>
-
-                    <div class="box">
-                        <img src="../img/person/four.png" alt="">
-                        <div class="desc">
-                            <h4>Rina Putri</h4>
-                            <p>Founder, StartupX</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card 5 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"Their team was very communicative throughout the project."</p>
-
-                    <div class="box">
-                        <img src="../img/person/five.png" alt="">
-                        <div class="desc">
-                            <h4>Dimas Prakoso</h4>
-                            <p>CTO, Digital Corp</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- card 6 -->
-                <div class="card">
-                    <img style="width: 20px;" src="img/logo/quotation.png" alt="">
-                    <p>"TriNova Tech significantly advanced our company's digital transformation."</p>
-
-                    <div class="box">
-                        <img src="../img/person/six.png" alt="">
-                        <div class="desc">
-                            <h4>Nadia Salsabila</h4>
-                            <p>Manager, Nexa Group</p>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-        <i id="next" class="fa-solid fa-chevron-right reveal"></i>
-    </div>
-</div>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
 
     <!-- FAQ Section -->
     <div class="faq">
@@ -530,44 +395,28 @@
                         <p class="show">We provide various digital services such as Software Development, Mobile App Development, Cloud Solutions, IT Security, and more.</p>
                     </div>
                     
-<<<<<<< HEAD
                     <img class="toggle-icon" src="img/logo/minus.png" alt="">
-=======
-                    <img class="toggle-icon" src="../img/logo/minus.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="box reveal">
                     <div class="b-desc">
                         <h4>How long does a project take?</h4>
                         <p>Project timelines vary depending on complexity and requirements. On average, most projects take between 2 to 12 weeks from planning to final delivery.</p>
                     </div>
-<<<<<<< HEAD
                     <img class="toggle-icon" src="img/logo/plus.png" alt="">
-=======
-                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="box reveal">
                     <div class="b-desc">
                         <h4>Does TriNova Tech serve small businesses?</h4>
                         <p>Yes, we work with businesses of all sizes, from startups and small businesses to larger enterprises, providing scalable digital solutions.</p>
                     </div>
-<<<<<<< HEAD
                     <img class="toggle-icon" src="img/logo/plus.png" alt="">
-=======
-                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
                 <div class="box reveal">
                     <div class="b-desc">
                         <h4>How to start a project with TriNova Tech?</h4>
                         <p>You can start by contacting us through our website or consultation form. Our team will discuss your needs and recommend the best solution.</p>
                     </div>
-<<<<<<< HEAD
                     <img class="toggle-icon" src="img/logo/plus.png" alt="">
-=======
-                    <img class="toggle-icon" src="../img/logo/plus.png" alt="">
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 </div>
             </div>
         </div>
@@ -576,10 +425,7 @@
         </div>
         
     </div>
-<<<<<<< HEAD
     
-=======
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
     <div class="end">
         <div class="container reveal">
             <div class="content">
@@ -609,7 +455,7 @@
                         <a href="index.html">Home</a>
                         <a href="about.html">About</a>
                         <a href="services.html">Services</a>
-                        <a href="product.html">Projects</a>
+                        <a href="product.php">Projects</a>
                         <a href="team.html">Our Team</a>
                         <a href="contact.php">Contact</a>
                     </div>
@@ -617,11 +463,11 @@
                 <div class="list">
                     <h4>Our Services</h4>
                     <div class="list-menu">
-                        <a href="product.html">Mobile App Development</a>
-                        <a href="product.html">Software Development</a>
-                        <a href="product.html">Cloud Solution</a>
-                        <a href="product.html">Products</a>
-                        <a href="product.html">IT Security</a>
+                        <a href="product.php">Mobile App Development</a>
+                        <a href="product.php">Software Development</a>
+                        <a href="product.php">Cloud Solution</a>
+                        <a href="product.php">Products</a>
+                        <a href="product.php">IT Security</a>
                     </div>
                 </div>
                 <div class="list">
@@ -658,5 +504,6 @@
 
     <script src="js/index.js"></script>
     <script src="js/loading.js"></script>
+    <script src="js/banner-slider.js"></script>
 </body>
 </html>

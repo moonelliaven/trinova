@@ -103,15 +103,17 @@ h3 {
 /* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
 .banner {
     display: grid;
-    background-image: url('../img/banner-2.png');
+    background:
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../img/banner6.jpg');
     background-size: cover;
     background-position: center;
-    height: 100vh;
+    padding: 100px;
+    height: 60vh;
     width: 100%;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(1, 1fr);
     padding: 60px;
-
 }
 
 .banner .sect-one {
@@ -533,4 +535,201 @@ h3 {
 
 .navbar li a:hover::after {
     width: 100%;
+}
+.navbar-active {
+    background-color: var(--black);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 998;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.navbar-2 {
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navbar-2 a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-active.active{
+    display: block;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.btn-sect i {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    .menu-btn {
+        display: block;
+    }
+
+    .btn-sect i {
+        display: block;
+    }
+
+    /* Banner */
+    .banner {
+        grid-template-columns: 1fr;
+        padding: 100px;
+        width: 100%;
+        height: auto;
+    }
+
+    .banner .sect-one {
+        padding: 20px 0;
+    }
+
+    .sect-one h1 {
+        font-size: 36px;
+    }
+
+    /* navbar and header */
+    .header { padding: 20px; } 
+    .header .logo img {
+        width: 120px; 
+    } 
+    .header .navbar { 
+        display: none; 
+    } 
+    .btn-sect { 
+        display: flex; 
+        gap: 10px; 
+    } 
+    .btn-sect span { 
+        display: none;
+    }
+
+    .btn-sect span {
+        display: none;
+    }
+
+    /* About */
+    .about {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+        padding: 40px 20px;
+        gap: 30px;
+        transform: scale(1);
+    }
+
+    .about .desc {
+        width: 80%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Values */
+    .values {
+        height: auto;
+        padding: 40px 20px;
+        transform: scale(1);
+    }
+
+    .values .card-section {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .card-2 {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    /* Team */
+    .container-team {
+        padding: 40px 20px;
+    }
+
+    .our-team {
+        flex-direction: column;
+        text-align: center;
+        padding: 30px 20px;
+    }
+
+    .team-desc {
+        width: 100%;
+        align-items: center;
+    }
+
+    .img-team {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    /* Statistics */
+    .container-t .card-section {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        padding: 50px;
+    }
+
+    .card-3 {
+        width: 100%;
+    }
+    .our-team.active {
+        padding: 60px;
+    }
+
+    /* CTA */
+    .qa {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .qa button {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frame-one {
+        width: 100%;
+    }
+
+    .frame-list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .twot {
+        flex-direction: column;
+    }
 }

@@ -96,24 +96,96 @@ h3 {
 }
 
 /* -------------BANNEEEERRRRRRRRRRRRRRRRRRRRRR------------------- */
-.banner {
-    display: grid;
-    background-image: url('../img/banner.png');
+.banner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    TEXT-ALIGN: CENTER;
+    position: relative;
+    width: 100%;
+    padding: 100px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.slide{
+    position: absolute;
+    inset: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    TEXT-ALIGN: CENTER;
+    WIDTH: 100%;
+
     background-size: cover;
     background-position: center;
-    height: 100vh;
-    width: 100%;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(1, 1fr);
-    padding: 60px;
 
+    opacity: 0;
+    transition: opacity 0.8s ease;
+}
+
+.slide.active{
+    opacity: 1;
+    z-index: 1;
+}
+
+.slide::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5);
+}
+
+.slide .sect-one{
+    position: relative;
+    z-index: 2;
+    padding: 0 100px;
+}
+
+/* BUTTON */
+
+.banner-btn{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+
+    width: 55px;
+    height: 55px;
+
+    border: none;
+    border-radius: 50%;
+
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+
+    color: white;
+    cursor: pointer;
+
+    font-size: 18px;
+
+    transition: 0.3s;
+}
+
+.banner-btn:hover{
+    background: var(--blue-primary);
+}
+
+.prev{
+    left: 30px;
+}
+
+.next{
+    right: 30px;
 }
 
 .banner .sect-one {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
+    text-align: center;
+    align-items: center;
     gap: 0px;
     padding: 20px 60px;
 }
@@ -247,7 +319,6 @@ h3 {
 .services .card-sect {
     display: flex;
     gap: 20px;
-    flex-wrap: wrap;
     width: 100%;
     align-items: center;
     justify-content: center;
@@ -443,7 +514,6 @@ h3 {
 
 .product-menu {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
     gap: 20px;
@@ -856,4 +926,232 @@ h3 {
 
 .navbar li a:hover::after {
     width: 100%;
+}
+
+.menu-btn{
+    display: none;
+}
+.btn-sect {
+    display: flex;
+    gap: 20px;
+}
+
+.btn-sect i {
+    display: none;
+}
+
+.btn-product.active {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 40px;
+    background-color: var(--blue-primary);
+    color: var(--white);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar-active {
+    background-color: var(--black);
+    position: fixed;
+    top: 70px;
+    right: 0;
+    z-index: 998;
+    width: 250px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    display: none;
+}
+.navbar-2 {
+    list-style: none;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.navbar-2 a {
+    text-decoration: none;
+    color: white;
+}
+.navbar-active.active{
+    display: block;
+}
+
+/* ---------------------------------- */
+@media screen and (max-width: 800px) {
+    .header {
+        height: auto;
+        padding: 10px;
+    }
+
+    .header .logo img {
+        padding: 10px;
+        align-self: flex-start;
+    }
+
+    .header .navbar {
+        gap: 10px;
+        padding: 10px;
+        display: none;
+    }
+    .navbar.active{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .menu-btn {
+        display: block;
+        background-color: var(--blue-primary);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn-sect i {
+        display: block;
+    }
+    .btn-sect span {
+        display: none;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        padding: 20px;
+        width: 100%;
+        padding: 100px 60px;
+    }
+
+    .services, .about, .process, .products, .testi, .faq {
+        padding: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services .card-sect, .card-sectt {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about {
+        padding: 100px;
+        flex-direction: column-reverse;
+    }
+    .about .sect-twoo {
+        display: none;
+    }
+    .process .sect-menu {
+        flex-direction: column;
+    }
+
+    .p-menu {
+        margin-bottom: -80px;
+    }
+
+    .product-menu {
+        flex-direction: column;
+        gap: 10px;
+        margin: none;
+        padding: none;
+    }
+    .products {
+        gap: 10px;
+        text-align: center;
+    }
+    .process hr.reveal {
+        display: none;
+    }
+    .process .sect-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frame-one {
+        width: 100%;
+    }
+
+    .frame-list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    .twot {
+        flex-direction: column;
+    }
+    .boxxes .box {
+        width: 100%;
+    }
+    .testi {
+        padding: 80px 20px;
+        height: auto;
+    }
+
+    .card-sectt {
+        gap: 10px;
+    }
+
+    .slider-container {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-sectt .card {
+        width: 100%;
+        min-width: 100%;
+        padding: 25px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    #prev,
+    #next {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .card-sectt i {
+        margin: 0;
+    }
+
+    .end .container.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
 }

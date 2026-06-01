@@ -1,5 +1,6 @@
 const filterButtons = document.querySelectorAll('.projects .card');
 const projectCards = document.querySelectorAll('.card-2');
+const text = document.querySelector('.none');
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
@@ -15,6 +16,7 @@ filterButtons.forEach(button => {
                 card.style.display = 'flex';
             } else {
                 card.style.display = 'none';
+                text.style.display = 'block';
             }
         });
     });

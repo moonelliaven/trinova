@@ -43,7 +43,7 @@ $services_query = mysqli_query($conn, "SELECT * FROM tb_services ORDER BY id ASC
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 </head>
 <body>
-    <!-- header -->
+       <!-- header -->
     <div class="header">
         <div class="logo">
             <img src="img/logo-text-white.png" alt="Logo" style="width: 160px;">
@@ -52,17 +52,26 @@ $services_query = mysqli_query($conn, "SELECT * FROM tb_services ORDER BY id ASC
             <li><a href="index.html">Home</a></li>
             <li><a href="about.html">About</a></li>
             <li><a href="services.html">Services</a></li>
+            <li><a href="product.html" >Project</a></li>
+            <li><a href="team.html">Our Team</a></li>
+            <li><a href="contact.php"  style="color: var(--blue-primary);">Contact</a></li>
+        </ul>
+        <div class="btn-sect">
+            <button class="menu-btn">☰</button>
+            <button onclick="window.location.href='login.php'"> <span> Get Started</span> <i class="fa-solid fa-user"></i></button>
+        </div>
+        
+    </div>
+    <div class="navbar-active">
+        <ul class="navbar-2">
+            <li><a href="index.html" >Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="services.html">Services</a></li>
             <li><a href="product.html">Project</a></li>
             <li><a href="team.html">Our Team</a></li>
             <li><a href="contact.php"  style="color: var(--blue-primary);">Contact</a></li>
         </ul>
-<<<<<<< HEAD
-        <button onclick="window.location.href='login.php'">Get Started</button>
-=======
-        <button>Get Started</button>
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
     </div>
-
     <!-- Banner -->
     <div class="banner">
         <div class="sect-one">
@@ -189,7 +198,14 @@ $services_query = mysqli_query($conn, "SELECT * FROM tb_services ORDER BY id ASC
             <h5>location</h5>
             <h1>Visit Our Office</h1>
             <p>Jl. Teknologi No. 10, Jakarta, Indonesia 10210 </p>
-            <div class="img-box"><img src="img/map.png" alt=""></div>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3982.624416378187!2d114.83236100000003!3d-3.4411900999999987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2de681d47b0ffd3b%3A0x3b48838a3c931f5b!2sTelkom%20Schools%20-%20SMK%20Telkom%20Banjarbaru!5e0!3m2!1sid!2sid!4v1780324983544!5m2!1sid!2sid"
+            width="500"
+            height="300" 
+            style="border:0; border-radius: 10px;"
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
             <div class="hq">
                 <img src="img/banner-banner.png" alt="">
                 <div class="desc">
@@ -276,5 +292,6 @@ $services_query = mysqli_query($conn, "SELECT * FROM tb_services ORDER BY id ASC
     </div>
 
     <script src="js/loading.js"></script>
+    <script src="js/navbar.js"></script>
 </body>
 </html>

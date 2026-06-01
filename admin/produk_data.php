@@ -102,7 +102,7 @@ $d = mysqli_fetch_object($query);
                         <td><?php echo ($row['product_status'] == 1) ? 'Aktif' : 'Tidak Aktif' ?></td>
                         <!-- edit atau hapus -->
                         <td>
-                            <a href="produk_edit.php?id=<?php echo $row['product_id'] ?>">Edit</a> ||
+                            <a href="produk_edit.php?id=<?php echo $row['product_id'] ?>">Edit</a> |
                             <a href="hapus_proses.php?idp=<?php echo $row['product_id'] ?>" onclick="return confirm('Yakin ingin hapus ?')">Hapus</a>
                         </td>
                     </tr>

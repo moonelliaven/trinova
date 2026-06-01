@@ -4,6 +4,8 @@ const next = document.getElementById('next');
 const prev = document.getElementById('prev');
 const faqBoxes = document.querySelectorAll('.faq .box');
 const projects = document.querySelectorAll('.project-card');
+const menuBtn = document.querySelector(".menu-btn");
+const navbarActive = document.querySelector(".navbar-active");
 
 let currentIndex = 0;
 const cardWidth = 360; // 340 + gap
@@ -34,11 +36,7 @@ faqBoxes.forEach(box => {
         faqBoxes.forEach(item => {
             if (item !== box) {
                 item.classList.remove('show');
-<<<<<<< HEAD
                 item.querySelector('.toggle-icon').src = 'img/logo/plus.png';
-=======
-                item.querySelector('.toggle-icon').src = '../img/logo/plus.png';
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
             }
         });
 
@@ -48,15 +46,9 @@ faqBoxes.forEach(box => {
         const icon = box.querySelector('.toggle-icon');
 
         if (box.classList.contains('show')) {
-<<<<<<< HEAD
             icon.src = 'img/logo/minus.png';
         } else {
             icon.src = 'img/logo/plus.png';
-=======
-            icon.src = '../img/logo/minus.png';
-        } else {
-            icon.src = '../img/logo/plus.png';
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
         }
     });
 });
@@ -64,6 +56,11 @@ faqBoxes.forEach(box => {
 // projects onclick
 projects.forEach(project => {
     project.addEventListener('click', () => {
-        window.location.href = 'product.html';
+        window.location.href = 'product.php';
     });
+});
+
+// menu toggle
+menuBtn.addEventListener("click", () => {
+    navbarActive.classList.toggle("active");
 });

@@ -41,11 +41,7 @@ $d = mysqli_fetch_object($query);
 
         <div class="section">
             <div class="container">
-<<<<<<< HEAD
             <div class="table2">
-=======
-
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
                 <!-- Search Bar -->
                 <div style="display: flex; align-items: center; gap: 10px; margin-bottom: 20px;">
                     <button class="cta" style="padding: 10px 14px; border-radius: 8px;">
@@ -88,7 +84,7 @@ $d = mysqli_fetch_object($query);
                         </td>
                         <td><?php echo date('d M Y', strtotime($row['created_at'])) ?></td>
                         <td>
-                            <a href="pesan_detail.php?id=<?php echo $row['id'] ?>" style="color: #2563eb;">Detail</a> ||
+                            <a href="pesan_detail.php?id=<?php echo $row['id'] ?>" style="color: #2563eb;">Detail</a> |
                             <a href="hapus_proses.php?idm=<?php echo $row['id'] ?>" 
                                onclick="return confirm('Yakin ingin hapus pesan ini?')" 
                                style="color: #dc2626;">Hapus</a>
@@ -103,10 +99,7 @@ $d = mysqli_fetch_object($query);
                     <?php } ?>
                 </table>
             </div>
-<<<<<<< HEAD
             </div>
-=======
->>>>>>> c347d1474db5fd27d60edc96c4515fa00d4c98dd
         </div>
     </div>
 
