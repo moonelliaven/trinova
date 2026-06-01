@@ -984,41 +984,79 @@ h3 {
 
 /* ---------------------------------- */
 @media screen and (max-width: 800px) {
-    .header {
-        height: auto;
-        padding: 10px;
+ .header{
+        height: 70px;
+        padding: 0 15px;
     }
 
-    .header .logo img {
-        padding: 10px;
-        align-self: flex-start;
+    .logo img{
+        width: 130px !important;
     }
 
-    .header .navbar {
+    .navbar{
+        display: none !important;
+    }
+
+    .btn-sect{
+        display: flex;
+        align-items: center;
         gap: 10px;
-        padding: 10px;
+    }
+
+    .btn-sect button:last-child{
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+
+    .btn-sect span{
         display: none;
     }
-    .navbar.active{
-        display: flex;
-        flex-direction: column;
+
+    .btn-sect i{
+        display: block;
     }
 
-    .menu-btn {
-        display: block;
-        background-color: var(--blue-primary);
+    .menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 40px;
+        height: 40px;
+        font-size: 22px;
+        background: transparent;
         color: white;
         border: none;
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-size: 20px;
-        cursor: pointer;
     }
-    .btn-sect i {
+
+    .navbar-active{
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background: #000610;
+        display: none;
+        padding: 20px;
+    }
+
+    .navbar-active.active{
         display: block;
     }
-    .btn-sect span {
-        display: none;
+
+    .navbar-2{
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .navbar-2 li{
+        text-align: center;
+    }
+
+    .navbar-2 a{
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
     }
 
     .banner {
