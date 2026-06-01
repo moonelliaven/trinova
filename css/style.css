@@ -983,121 +983,175 @@ h3 {
 }
 
 /* ---------------------------------- */
-/* ================= MOBILE ================= */
-@media screen and (max-width: 800px){
-
-    /* HEADER */
-    .header{
-        height: 70px;
-        padding: 0 15px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        overflow: visible;
+@media screen and (max-width: 800px) {
+    .header {
+        height: auto;
+        padding: 10px;
     }
 
-    /* LOGO */
-    .header .logo img{
-        height: 40px;
-        width: auto;
-        padding: 0;
+    .header .logo img {
+        padding: 10px;
+        align-self: flex-start;
     }
 
-    /* NAVBAR DESKTOP HILANG */
-    .navbar{
-        display: none !important;
-    }
-
-    /* BUTTON CONTACT */
-    .header button{
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    /* WRAPPER BUTTON + HAMBURGER */
-    .btn-sect{
-        display: flex;
-        align-items: center;
+    .header .navbar {
         gap: 10px;
-    }
-
-    .btn-sect span{
+        padding: 10px;
         display: none;
     }
-
-    .btn-sect i{
-        display: block;
-    }
-
-    /* HAMBURGER */
-    .menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        width: 42px;
-        height: 42px;
-
-        border: none;
-        border-radius: 8px;
-
-        background: var(--blue-primary);
-        color: white;
-
-        cursor: pointer;
-    }
-
-    /* MOBILE MENU */
-    .navbar-active{
-        position: fixed;
-        top: 70px;
-        left: 0;
-
-        width: 100%;
-
-        background: var(--dark-blue);
-
-        display: none;
-
-        padding: 20px 0;
-
-        z-index: 999;
-    }
-
-    .navbar-active.active{
-        display: block;
-    }
-
-    .navbar-2{
-        list-style: none;
-
+    .navbar.active{
         display: flex;
         flex-direction: column;
-
-        align-items: center;
-        gap: 20px;
-
-        margin: 0;
-        padding: 0;
     }
 
-    .navbar-2 li{
+    .menu-btn {
+        display: block;
+        background-color: var(--blue-primary);
+        color: white;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn-sect i {
+        display: block;
+    }
+    .btn-sect span {
+        display: none;
+    }
+
+    .banner {
+        grid-template-columns: 1fr;
+        padding: 20px;
         width: 100%;
+        padding: 100px 60px;
+    }
+
+    .services, .about, .process, .products, .testi, .faq {
+        padding: 100px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .services .card-sect, .card-sectt {
+        flex-direction: column;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .about {
+        padding: 100px;
+        flex-direction: column-reverse;
+    }
+    .about .sect-twoo {
+        display: none;
+    }
+    .process .sect-menu {
+        flex-direction: column;
+    }
+
+    .p-menu {
+        margin-bottom: -80px;
+    }
+
+    .product-menu {
+        flex-direction: column;
+        gap: 10px;
+        margin: none;
+        padding: none;
+    }
+    .products {
+        gap: 10px;
+        text-align: center;
+    }
+    .process hr.reveal {
+        display: none;
+    }
+    .process .sect-menu {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 100px;
+    }
+    .footer {
+        height: auto;
+        padding: 20px;
+    }
+    /* Footer */
+    .footer {
+        height: auto;
+        padding: 40px 20px;
+    }
+
+    .content-footer {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .frame-one {
+        width: 100%;
+    }
+
+    .frame-list {
+        flex-direction: column;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .new {
+        flex-direction: column;
+        gap: 10px;
+        height: auto;
+        padding: 0 20px;
         text-align: center;
     }
 
-    .navbar-2 a{
-        display: block;
-
-        color: white;
-        text-decoration: none;
-        font-size: 16px;
-
-        padding: 10px 0;
+    .twot {
+        flex-direction: column;
+    }
+    .boxxes .box {
+        width: 100%;
+    }
+    .testi {
+        padding: 80px 20px;
+        height: auto;
     }
 
-    .navbar-2 a:hover{
-        color: var(--blue-primary);
+    .card-sectt {
+        gap: 10px;
     }
 
+    .slider-container {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .card-sectt .card {
+        width: 100%;
+        min-width: 100%;
+        padding: 25px;
+    }
+
+    .card {
+        min-width: 100%;
+    }
+
+    #prev,
+    #next {
+        width: 40px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .card-sectt i {
+        margin: 0;
+    }
+
+    .end .container.active {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 10px;
+    }
 }
