@@ -1210,4 +1210,70 @@ h3 {
     .twot{
         flex-direction: column;
     }
+    .navbar{
+        display:none;
+    }
+
+    .menu-btn{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        width:45px;
+        height:45px;
+        padding:0;
+        border:none;
+        border-radius:8px;
+        cursor:pointer;
+    }
+
+    .btn-sect{
+        display:flex;
+        align-items:center;
+        gap:10px;
+    }
+
+    .btn-sect span{
+        display:none;
+    }
+
+    .btn-sect i{
+        display:block;
+    }
+
+    .navbar-active{
+        position:fixed;
+        top:70px;
+        left:0;
+        width:100%;
+        background:#000610;
+        display:none;
+        z-index:998;
+        padding:20px 0;
+        border-top:1px solid rgba(255,255,255,.1);
+    }
+
+    .navbar-active.active{
+        display:block;
+    }
+
+    .navbar-2{
+        list-style:none;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        gap:20px;
+        margin:0;
+        padding:0;
+    }
+
+    .navbar-2 a{
+        color:white;
+        text-decoration:none;
+        font-size:16px;
+        font-weight:500;
+    }
+
+    .navbar-2 a:hover{
+        color:var(--blue-primary);
+    }
 }
