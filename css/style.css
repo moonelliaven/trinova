@@ -185,7 +185,7 @@ h3 {
     flex-direction: column;
     justify-content: center;
     text-align: center;
-    align-items: center;
+    align-items: flex-start;
     gap: 0px;
     padding: 20px 60px;
 }
@@ -984,79 +984,42 @@ h3 {
 
 /* ---------------------------------- */
 @media screen and (max-width: 800px) {
- .header{
-        height: 70px;
-        padding: 0 15px;
-    }
-
-    .logo img{
-        width: 130px !important;
-    }
-
-    .navbar{
-        display: none !important;
-    }
-
-    .btn-sect{
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .btn-sect button:last-child{
-        padding: 8px 15px;
-        font-size: 14px;
-    }
-
-    .btn-sect span{
-        display: none;
-    }
-
-    .btn-sect i{
-        display: block;
-    }
-
-    .menu-btn{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 40px;
-        height: 40px;
-        font-size: 22px;
-        background: transparent;
-        color: white;
-        border: none;
-    }
-
-    .navbar-active{
-        position: fixed;
-        top: 70px;
-        left: 0;
+    .header {
+        height: auto;
+        padding: 10px;
         width: 100%;
-        background: #000610;
+    }
+
+    .header .logo img {
+        padding: 10px;
+        align-self: flex-start;
+    }
+
+    .header .navbar {
+        gap: 10px;
+        padding: 10px;
         display: none;
-        padding: 20px;
     }
-
-    .navbar-active.active{
-        display: block;
-    }
-
-    .navbar-2{
-        list-style: none;
+    .navbar.active{
         display: flex;
         flex-direction: column;
-        gap: 20px;
     }
 
-    .navbar-2 li{
-        text-align: center;
-    }
-
-    .navbar-2 a{
+    .menu-btn {
+        display: block;
+        background-color: var(--blue-primary);
         color: white;
-        text-decoration: none;
-        font-size: 16px;
+        border: none;
+        padding: 10px 15px;
+        border-radius: 8px;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .btn-sect i {
+        display: block;
+    }
+    .btn-sect span {
+        display: none;
     }
 
     .banner {
@@ -1064,6 +1027,13 @@ h3 {
         padding: 20px;
         width: 100%;
         padding: 100px 60px;
+    }
+
+    .slide {
+        background-size: cover;
+        background-position: center;
+        padding: 20px;
+        width: 100%;
     }
 
     .services, .about, .process, .products, .testi, .faq {
