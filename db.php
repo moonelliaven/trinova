@@ -1,5 +1,4 @@
 <?php
-
 $hostname = 'mysql.railway.internal';
 $username = 'root';
 $password = 'cQDuLQbdZxuuifRYNuAAhPISXRhtKIlk';
@@ -13,5 +12,3 @@ $conn = mysqli_connect(
     $dbname,
     (int)$port
 ) or die('Gagal terhubung ke database');
-
-?>

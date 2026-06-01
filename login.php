@@ -1,7 +1,8 @@
-            <?php
-            session_start();
-            include('db.php');
-            ?>
+<?php
+ob_start();
+session_start();
+include('db.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
