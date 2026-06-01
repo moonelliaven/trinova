@@ -983,7 +983,7 @@ h3 {
 }
 
 /* ---------------------------------- */
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 768px) {
     .header {
         height: auto;
         padding: 10px;
@@ -1037,7 +1037,8 @@ h3 {
     }
 
     .services, .about, .process, .products, .testi, .faq {
-        padding: 100px;
+        padding: 20px;
+        width: 100%;
         display: flex;
         flex-wrap: wrap;
     }
