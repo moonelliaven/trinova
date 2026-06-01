@@ -983,297 +983,121 @@ h3 {
 }
 
 /* ---------------------------------- */
+/* ================= MOBILE ================= */
 @media screen and (max-width: 800px){
 
-    /* Global */
-    h1{
-        font-size: 32px !important;
-    }
-
-    h3{
-        font-size: 24px !important;
-    }
-
-    p{
-        font-size: 14px !important;
-    }
-
-    /* Header */
+    /* HEADER */
     .header{
-        padding: 10px 20px;
+        height: 70px;
+        padding: 0 15px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        overflow: visible;
     }
 
+    /* LOGO */
+    .header .logo img{
+        height: 40px;
+        width: auto;
+        padding: 0;
+    }
+
+    /* NAVBAR DESKTOP HILANG */
     .navbar{
         display: none !important;
     }
 
-    .menu-btn{
-        display: block;
+    /* BUTTON CONTACT */
+    .header button{
+        padding: 8px 15px;
+        font-size: 14px;
     }
 
-    .btn-sect span{
-        display: none;
-    }
-
-    .btn-sect i{
-        display: block;
-    }
-
-    /* Banner */
-    .banner{
-        height: 80vh;
-        padding: 20px;
-    }
-
-    .slide .sect-one{
-        padding: 0 20px;
-    }
-
-    .sect-one h1{
-        font-size: 34px;
-    }
-
-    .sect-one p{
-        width: 100%;
-    }
-
-    .banner-btn{
-        width: 45px;
-        height: 45px;
-    }
-
-    /* Services */
-
-    .services{
-        padding: 60px 20px;
-    }
-
-    .services .card-sect{
-        flex-direction: column;
-    }
-
-    .services .card{
-        width: 100%;
-        height: auto;
-    }
-
-    /* About */
-
-    .about{
-        padding: 60px 20px;
-        flex-direction: column;
-        gap: 30px;
-    }
-
-    .sect-twoo{
-        transform: none;
-    }
-
-    .sect-twoo .about-img{
-        width: 100%;
-    }
-
-    .about .sect-twoo .menu-sect{
-        flex-direction: column;
-        padding: 20px;
-        width: 100%;
-        transform: none;
-    }
-
-    /* Process */
-
-    .process{
-        padding: 60px 20px;
-    }
-
-    .process .sect-menu{
-        display: flex;
-        flex-direction: column;
-        gap: 20px;
-    }
-
-    .process hr{
-        display: none;
-    }
-
-    .s-menu{
-        width: 100%;
-        height: auto;
-    }
-
-    /* Products */
-
-    .products{
-        padding: 60px 20px;
-    }
-
-    .product-menu{
-        flex-direction: column;
-    }
-
-    .p-menu{
-        width: 100%;
-        height: auto;
-    }
-
-    .pm-img img{
-        height: 220px;
-    }
-
-    /* Testimonial */
-
-    .testi{
-        padding: 60px 20px;
-        height: auto;
-    }
-
-    .slider-container{
-        width: 100%;
-        max-width: 100%;
-    }
-
-    .card-sectt{
-        gap: 10px;
-    }
-
-    .card-sectt .card{
-        width: 100%;
-        min-width: 100%;
-    }
-
-    .card-sectt i{
-        margin: 0;
-    }
-
-    /* FAQ */
-
-    .faq{
-        flex-direction: column;
-        padding: 60px 20px;
-    }
-
-    .boxxes .box{
-        width: 100%;
-        padding: 15px;
-    }
-
-    .b-desc h4{
-        font-size: 16px;
-    }
-
-    /* CTA */
-
-    .end{
-        height: auto;
-        padding: 20px;
-    }
-
-    .end .container{
-        flex-direction: column;
-        text-align: center;
-        gap: 20px;
-    }
-
-    .container button{
-        width: 100%;
-    }
-
-    /* Footer */
-
-    .footer{
-        height: auto;
-        padding: 40px 20px;
-    }
-
-    .content-footer{
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .frame-one{
-        width: 100%;
-    }
-
-    .frame-list{
-        flex-direction: column;
-        width: 100%;
-        gap: 20px;
-    }
-
-    .new{
-        flex-direction: column;
-        gap: 10px;
-        height: auto;
-        text-align: center;
-    }
-
-    .twot{
-        flex-direction: column;
-    }
-    .navbar{
-        display:none;
-    }
-
-    .menu-btn{
-        display:flex;
-        align-items:center;
-        justify-content:center;
-        width:45px;
-        height:45px;
-        padding:0;
-        border:none;
-        border-radius:8px;
-        cursor:pointer;
-    }
-
+    /* WRAPPER BUTTON + HAMBURGER */
     .btn-sect{
-        display:flex;
-        align-items:center;
-        gap:10px;
+        display: flex;
+        align-items: center;
+        gap: 10px;
     }
 
     .btn-sect span{
-        display:none;
+        display: none;
     }
 
     .btn-sect i{
-        display:block;
+        display: block;
     }
 
+    /* HAMBURGER */
+    .menu-btn{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        width: 42px;
+        height: 42px;
+
+        border: none;
+        border-radius: 8px;
+
+        background: var(--blue-primary);
+        color: white;
+
+        cursor: pointer;
+    }
+
+    /* MOBILE MENU */
     .navbar-active{
-        position:fixed;
-        top:70px;
-        left:0;
-        width:100%;
-        background:#000610;
-        display:none;
-        z-index:998;
-        padding:20px 0;
-        border-top:1px solid rgba(255,255,255,.1);
+        position: fixed;
+        top: 70px;
+        left: 0;
+
+        width: 100%;
+
+        background: var(--dark-blue);
+
+        display: none;
+
+        padding: 20px 0;
+
+        z-index: 999;
     }
 
     .navbar-active.active{
-        display:block;
+        display: block;
     }
 
     .navbar-2{
-        list-style:none;
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        gap:20px;
-        margin:0;
-        padding:0;
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        gap: 20px;
+
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-2 li{
+        width: 100%;
+        text-align: center;
     }
 
     .navbar-2 a{
-        color:white;
-        text-decoration:none;
-        font-size:16px;
-        font-weight:500;
+        display: block;
+
+        color: white;
+        text-decoration: none;
+        font-size: 16px;
+
+        padding: 10px 0;
     }
 
     .navbar-2 a:hover{
-        color:var(--blue-primary);
+        color: var(--blue-primary);
     }
+
 }
