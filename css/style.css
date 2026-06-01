@@ -983,175 +983,231 @@ h3 {
 }
 
 /* ---------------------------------- */
-@media screen and (max-width: 800px) {
-    .header {
-        height: auto;
-        padding: 10px;
+@media screen and (max-width: 800px){
+
+    /* Global */
+    h1{
+        font-size: 32px !important;
     }
 
-    .header .logo img {
-        padding: 10px;
-        align-self: flex-start;
+    h3{
+        font-size: 24px !important;
     }
 
-    .header .navbar {
-        gap: 10px;
-        padding: 10px;
+    p{
+        font-size: 14px !important;
+    }
+
+    /* Header */
+    .header{
+        padding: 10px 20px;
+    }
+
+    .navbar{
+        display: none !important;
+    }
+
+    .menu-btn{
+        display: block;
+    }
+
+    .btn-sect span{
         display: none;
     }
-    .navbar.active{
-        display: flex;
+
+    .btn-sect i{
+        display: block;
+    }
+
+    /* Banner */
+    .banner{
+        height: 80vh;
+        padding: 20px;
+    }
+
+    .slide .sect-one{
+        padding: 0 20px;
+    }
+
+    .sect-one h1{
+        font-size: 34px;
+    }
+
+    .sect-one p{
+        width: 100%;
+    }
+
+    .banner-btn{
+        width: 45px;
+        height: 45px;
+    }
+
+    /* Services */
+
+    .services{
+        padding: 60px 20px;
+    }
+
+    .services .card-sect{
         flex-direction: column;
     }
 
-    .menu-btn {
-        display: block;
-        background-color: var(--blue-primary);
-        color: white;
-        border: none;
-        padding: 10px 15px;
-        border-radius: 8px;
-        font-size: 20px;
-        cursor: pointer;
-    }
-    .btn-sect i {
-        display: block;
-    }
-    .btn-sect span {
-        display: none;
+    .services .card{
+        width: 100%;
+        height: auto;
     }
 
-    .banner {
-        grid-template-columns: 1fr;
+    /* About */
+
+    .about{
+        padding: 60px 20px;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .sect-twoo{
+        transform: none;
+    }
+
+    .sect-twoo .about-img{
+        width: 100%;
+    }
+
+    .about .sect-twoo .menu-sect{
+        flex-direction: column;
         padding: 20px;
         width: 100%;
-        padding: 100px 60px;
+        transform: none;
     }
 
-    .services, .about, .process, .products, .testi, .faq {
-        padding: 100px;
+    /* Process */
+
+    .process{
+        padding: 60px 20px;
+    }
+
+    .process .sect-menu{
         display: flex;
-        flex-wrap: wrap;
-    }
-
-    .services .card-sect, .card-sectt {
         flex-direction: column;
-        display: flex;
-        flex-wrap: wrap;
+        gap: 20px;
     }
-    .about {
-        padding: 100px;
-        flex-direction: column-reverse;
-    }
-    .about .sect-twoo {
+
+    .process hr{
         display: none;
     }
-    .process .sect-menu {
+
+    .s-menu{
+        width: 100%;
+        height: auto;
+    }
+
+    /* Products */
+
+    .products{
+        padding: 60px 20px;
+    }
+
+    .product-menu{
         flex-direction: column;
     }
 
-    .p-menu {
-        margin-bottom: -80px;
+    .p-menu{
+        width: 100%;
+        height: auto;
     }
 
-    .product-menu {
+    .pm-img img{
+        height: 220px;
+    }
+
+    /* Testimonial */
+
+    .testi{
+        padding: 60px 20px;
+        height: auto;
+    }
+
+    .slider-container{
+        width: 100%;
+        max-width: 100%;
+    }
+
+    .card-sectt{
+        gap: 10px;
+    }
+
+    .card-sectt .card{
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .card-sectt i{
+        margin: 0;
+    }
+
+    /* FAQ */
+
+    .faq{
         flex-direction: column;
-        gap: 10px;
-        margin: none;
-        padding: none;
+        padding: 60px 20px;
     }
-    .products {
-        gap: 10px;
-        text-align: center;
+
+    .boxxes .box{
+        width: 100%;
+        padding: 15px;
     }
-    .process hr.reveal {
-        display: none;
+
+    .b-desc h4{
+        font-size: 16px;
     }
-    .process .sect-menu {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        gap: 100px;
-    }
-    .footer {
+
+    /* CTA */
+
+    .end{
         height: auto;
         padding: 20px;
     }
+
+    .end .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .container button{
+        width: 100%;
+    }
+
     /* Footer */
-    .footer {
+
+    .footer{
         height: auto;
         padding: 40px 20px;
     }
 
-    .content-footer {
+    .content-footer{
         flex-direction: column;
         align-items: flex-start;
     }
 
-    .frame-one {
+    .frame-one{
         width: 100%;
     }
 
-    .frame-list {
+    .frame-list{
         flex-direction: column;
+        width: 100%;
         gap: 20px;
-        width: 100%;
     }
 
-    .new {
+    .new{
         flex-direction: column;
         gap: 10px;
         height: auto;
-        padding: 0 20px;
         text-align: center;
     }
 
-    .twot {
+    .twot{
         flex-direction: column;
-    }
-    .boxxes .box {
-        width: 100%;
-    }
-    .testi {
-        padding: 80px 20px;
-        height: auto;
-    }
-
-    .card-sectt {
-        gap: 10px;
-    }
-
-    .slider-container {
-        width: 100%;
-        max-width: 350px;
-    }
-
-    .card-sectt .card {
-        width: 100%;
-        min-width: 100%;
-        padding: 25px;
-    }
-
-    .card {
-        min-width: 100%;
-    }
-
-    #prev,
-    #next {
-        width: 40px;
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .card-sectt i {
-        margin: 0;
-    }
-
-    .end .container.active {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        gap: 10px;
     }
 }
