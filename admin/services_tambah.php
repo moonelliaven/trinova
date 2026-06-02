@@ -60,7 +60,7 @@ $d = mysqli_fetch_object($query);
                 if(isset($_POST['submit'])){
                     $services = $_POST['services'];
                         
-                        $insert = mysqli_query($conn, "INSERT INTO tb_services VALUES('', '$services' )");
+                    $insert = mysqli_query($conn, "INSERT INTO tb_services VALUES (NULL, '$services')");
                         
                         if($insert){
                             echo '<script>alert("Tambah data berhasil")</script>';
