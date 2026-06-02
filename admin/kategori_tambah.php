@@ -76,7 +76,7 @@ $d = mysqli_fetch_object($query);
                             move_uploaded_file($tmp_name, '../category/'.$filename);
 
                             $insert = mysqli_query($conn,
-                                "INSERT INTO tb_category (nama_category, category_image)
+                                "INSERT INTO tb_category (category_name, category_image)
                                 VALUES ('$nama', '$filename')"
                             );
 
