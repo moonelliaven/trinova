@@ -74,7 +74,7 @@ $row = mysqli_fetch_assoc($query);
 
         while($row = mysqli_fetch_assoc($kategori)){
         ?>
-        <div class="card" data-filter="<?php echo $row['category_name']; ?>">
+        <div class="card" data-filter="<?php echo strtolower($row['category_name']); ?>">
             <img src="category/<?php echo $row['category_image']; ?>">
             <?php echo $row['category_name']; ?>
         </div>
