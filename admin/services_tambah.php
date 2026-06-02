@@ -49,8 +49,8 @@ $d = mysqli_fetch_object($query);
                 <form action="" method="post" enctype="multipart/form-data">
                     <h3>Tambah Data Services</h3>
                     <fieldset>
-                        <label>Nama Services</label>
-                        <input type="text" name="nama" placeholder="Nama Services" class="form-control" required>
+                        <label>Services</label>
+                        <input type="text" name="services" placeholder="Services" class="form-control" required>
                     </fieldset>
                     <fieldset>
                         <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Tambah</button>
@@ -58,9 +58,9 @@ $d = mysqli_fetch_object($query);
                 </form>
                 <?php
                 if(isset($_POST['submit'])){
-                    $nama = $_POST['nama'];
+                    $services = $_POST['services'];
                         
-                        $insert = mysqli_query($conn, "INSERT INTO tb_services VALUES('', '$nama' )");
+                        $insert = mysqli_query($conn, "INSERT INTO tb_services VALUES('', '$services' )");
                         
                         if($insert){
                             echo '<script>alert("Tambah data berhasil")</script>';
