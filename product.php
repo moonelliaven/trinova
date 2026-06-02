@@ -67,7 +67,7 @@ $row = mysqli_fetch_assoc($query);
         <h5 class="reveal">our projects categories</h5>
         <h1 class="reveal">Products Solutions for Various Business Needs</h1>
         <p class="reveal">We provide a wide range of leading digital products that have proven to help companies improve efficiency and drive growth.</p>
-        <div class="card-section reveal">
+        <div class="card-section reveal" id="filter-kategori">
             <div class="card active-1" data-filter="all"><i class="fa-solid fa-bars"></i>All Projects</div>
         <?php
         $kategori = mysqli_query($conn, "SELECT * FROM tb_category");

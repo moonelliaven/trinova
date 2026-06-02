@@ -714,3 +714,19 @@ h3 {
         flex-direction: column;
     }
 }
+
+/* Tombol filter kategori */
+#filter-kategori .card {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+/* Gambar di dalam tombol kategori */
+#filter-kategori .card img {
+    width: 24px;
+    height: 24px;
+    object-fit: contain;
+    display: block;        /* <-- ini yang sering jadi masalah */
+}
