@@ -61,26 +61,35 @@ $d = mysqli_fetch_object($query);
                     </fieldset>
                 </form>
                 <?php
-                if(isset($_POST['submit'])){
-                $nama = mysqli_real_escape_string($conn, $_POST['nama']);
-                $filename = mysqli_real_escape_string($conn, $filename);
-                    $tmp_name = $_FILES['category_image']['tmp_name'];
-                    $type2 = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-                    $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
+                    if(isset($_POST['submit'])){
 
-                    if(in_array($type2, $tipe_diizinkan)){
-                        move_uploaded_file($tmp_name, '../category/'.$filename);
-                        
-                        $insert = mysqli_query($conn, "INSERT INTO tb_category (nama_category, category_image) VALUES ('$nama', '$filename')");;
-                        
-                        if($insert){
-                            echo '<script>alert("Tambah data berhasil")</script>';
-                            echo '<script>window.location="kategori_data.php"</script>';
-                        }else{
-                            echo 'gagal '.mysqli_error($conn);
+                        $nama = mysqli_real_escape_string($conn, $_POST['nama']);
+
+                        $filename = $_FILES['category_image']['name'];
+                        $tmp_name = $_FILES['category_image']['tmp_name'];
+
+                        $type2 = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
+                        $tipe_diizinkan = array('jpg', 'jpeg', 'png', 'gif');
+
+                        if(in_array($type2, $tipe_diizinkan)){
+
+                            move_uploaded_file($tmp_name, '../category/'.$filename);
+
+                            $insert = mysqli_query($conn,
+                                "INSERT INTO tb_category (nama_category, category_image)
+                                VALUES ('$nama', '$filename')"
+                            );
+
+                            if($insert){
+                                echo '<script>alert("Tambah data berhasil")</script>';
+                                echo '<script>window.location="kategori_data.php"</script>';
+                            }else{
+                                echo 'gagal '.mysqli_error($conn);
+                            }
+
+                        } else {
+                            echo '<script>alert("Format file tidak diizinkan")</script>';
                         }
-                    } else {
-                        echo '<script>alert("Format file tidak diizinkan")</script>';
                     }
                 }
                 ?>
