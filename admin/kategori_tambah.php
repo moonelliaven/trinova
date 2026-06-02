@@ -91,7 +91,6 @@ $d = mysqli_fetch_object($query);
                             echo '<script>alert("Format file tidak diizinkan")</script>';
                         }
                     }
-                }
                 ?>
             </div>
         </div>
